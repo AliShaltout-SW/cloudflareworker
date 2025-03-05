@@ -6,10 +6,10 @@ async function handleRequest(request) {
   const url = new URL(request.url)
 
   // Check if the request URI contains a specific path
-  if (url.pathname.includes('/specific-path')) {
+  if (url.pathname.includes('klarna')) {
     // Clone the request and modify the headers
     const modifiedHeaders = new Headers(request.headers)
-    modifiedHeaders.set('CF-Connecting-IP', 'new.ip.address.here')
+    modifiedHeaders.set('CF-Connecting-IP', '195.13.221.74')
 
     // Create a new request with the modified headers
     const modifiedRequest = new Request(request, {
