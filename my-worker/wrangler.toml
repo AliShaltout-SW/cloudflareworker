@@ -7,4 +7,5 @@ route = "*subdomain-tnh-1612340878-upgrade-test-qzf.readymage.com/*"
 zone_id = "45badf39526c3e42b9a53586873c7521"
 
 # Specify the entry-point script
+compatibility_date = "2025-03-05"
 main = "index.js"
