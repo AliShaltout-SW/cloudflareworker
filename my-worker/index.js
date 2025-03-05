@@ -13,6 +13,7 @@ async function handleRequest(request) {
     // Clone the request and modify the headers
     const modifiedHeaders = new Headers(request.headers)
     modifiedHeaders.set('CF-Connecting-IP', '195.13.221.74')
+    modifiedHeaders.set('X-Real-IP', '195.13.221.74')
     console.log('Modified Headers:', [...modifiedHeaders.entries()])
 
     // Create a new request with the modified headers
